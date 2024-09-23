@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="D:\UTE_Huhu\HK1-2025\WEB\Week4\Ch05ex2\src\main\webapp">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="D:/UTE_Huhu/HK1-2025/WEB/Week4/Ch05ex2/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+  </Resources>
+</Context>
