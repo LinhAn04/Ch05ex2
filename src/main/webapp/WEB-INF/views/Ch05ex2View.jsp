@@ -13,14 +13,16 @@
 <p>To join our email list, enter your name and email address below.</p>
 <%--<p class="mess"><i>${message}</i></p>--%>
 <%--  Có "require thì tự động bắt buộc phải điền field đó--%>
-<label>Email:</label>
-<input type="email" name="email" required><br>
-<label>First Name:</label>
-<input type="text" name="firstName" required><br>
-<label>Last Name:</label>
-<input type="text" name="lastName" required><br>
+
 
 <form action="test" method="get">
+  <label>Email:</label>
+  <input type="email" name="email" required><br>
+  <label>First Name:</label>
+  <input type="text" name="firstName" required><br>
+  <label>Last Name:</label>
+  <input type="text" name="lastName" required><br>
+  <input type="hidden" name="action" value="add">
   <input type="hidden" name="action" value="add">
   <p>1. Click the <strong>Get Method</strong> button to run the test servlet.
     <br>This should show that the test servlet works for the HTTP
@@ -28,6 +30,12 @@
   <input class="button" type="submit" value="Get Method">
 </form>
 <form action="test" method="post">
+  <label>Email:</label>
+  <input type="email" name="email" required><br>
+  <label>First Name:</label>
+  <input type="text" name="firstName" required><br>
+  <label>Last Name:</label>
+  <input type="text" name="lastName" required><br>
   <input type="hidden" name="action" value="add">
   <p>2. Click the <strong>Post Method</strong> button to run the test servlet.
     <br>This should show that the test servlet works for the HTTP
