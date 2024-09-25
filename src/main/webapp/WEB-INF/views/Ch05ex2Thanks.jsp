@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanks Page</title>
-    <link rel="stylesheet" href="css/Ch05.css" type="text/css"/>
+    <link rel="stylesheet" href="css/Ch05style.css" type="text/css"/>
 </head>
 
 <body>
@@ -25,11 +25,26 @@
 <script>
     console.log("Hello, this is a message in the console!");
 </script>
-<form action="" method="post">
+
+<form id="myForm" action="">
+    <label for="method">Choose method:</label>
+    <select id="method" name="method" onchange="setFormMethod()">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+    </select>
+
     <input type="hidden" name="action" value="join">
-    <input type="hidden" name="myExercise" value="Ch05ex1View">
+    <input type="hidden" name="myExercise" value="Ch05ex2View">
     <input class="button" type="submit" value="Return">
 </form>
+
+<script>
+    function setFormMethod() {
+        var form = document.getElementById("myForm");
+        var method = document.getElementById("method").value;
+        form.method = method;  // Cập nhật phương thức của form
+    }
+</script>
 
 </body>
 </html>

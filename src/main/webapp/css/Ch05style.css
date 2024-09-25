@@ -11,11 +11,15 @@ h1{
 }
 label{
     float: left;
-    width: 50em;
+    width: 8em;
     margin-bottom: 0.5em;
 }
-input[type="text"], input[type="email"], select{
+input[type="text"], input[type="email"]{
     width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+select{
     margin-left: 0.5em;
     margin-bottom: 0.5em;
 }
